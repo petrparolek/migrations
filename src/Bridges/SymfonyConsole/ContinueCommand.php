@@ -26,7 +26,7 @@ class ContinueCommand extends BaseCommand
 		$this->setName(self::$defaultName);
 		$this->setDescription('Updates database schema by running all new migrations');
 		$this->setHelp("If table 'migrations' does not exist in current database, it is created automatically.");
-		$this->addOption('force', null, InputOption::VALUE_NONE, 'Run force migrations');
+		$this->addOption('force', 'f', InputOption::VALUE_NONE, 'Run force migrations');
 	}
 
 
